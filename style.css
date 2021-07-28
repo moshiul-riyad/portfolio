@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* own css */
+
+/* NAV AND HEADER */
+
+body,html{
+    height: 100%;
+}
+
+body{
+    color: antiquewhite;
+}
+
+body{
+    background: url("woods.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    color: antiquewhite;
+    text-align: center;
+    overflow: auto;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 180px;
+}
+
+.nav-ul li a{
+    display: inline-block;
+    color: antiquewhite;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Bellota', cursive;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-ul li a:hover{
+    text-decoration: none;
+    background: #0e1941;
+    color: #45bce5;
+    border-radius: 15px;
+    padding: 5px 10px;
+    
+}
+
+#hamburger{
+    background-color: transparent;
+    border: 1px solid black;
+    color: antiquewhite;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger:focus{
+    outline: none;
+}
+
+.name{
+    font-family: 'Fredoka One', cursive; 
+    font-size: 4rem;
+}
+
+.fPageMaincontent{
+    min-height: 75vh;
+
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+/* ABOUT SECTION */
+
+.introduction{
+    margin: 2rem auto;
+    font-family: 'Bellota', cursive;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: antiquewhite;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 50%;
+    margin: auto;
+    list-style: none;
+    line-height: 2;
+    
+}
+
+.socialmedia{
+    color: antiquewhite;
+    font-size: x-large;
+    transition: all 3s ease-in-out;
+}
+
+/* .fas{
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 0;
+    transition: all 3s ease-in-out;
+    
+} */
+
+.fab:hover{
+    color: #45bce5;
+    
+}
+
+.about{
+    background: #2b2b2b;
+    min-height: 1000px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.aboutmyself{
+    padding-top: 10%;
+    margin-top: 0;
+}
+
+section div h2{
+    color: antiquewhite;
+    margin-bottom: 3rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+section div p{
+    color: #7a7a7a;
+    font-family: 'Bellota', cursive;
+}
+
+.propic{
+    /* position: relative; */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+section div .aboutpar{
+    padding-bottom: 5rem;
+    margin-bottom: 0;
+}
+
+ /* WORK SECTION */
+
+.works{
+    background: #212529;
+    min-height: 1000px;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+}
+
+.card-title{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;  
+}
+
+/* SKILSS(CONTACT) SECTION */
+
+.skills{
+    background: url("rail.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 950px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.myworks{
+    padding-top: 5rem;
+}
+
+.img-fluid{
+    max-height: 200px;
+}
+
+.card-body{
+    background: #e0fbfc;
+}
+div .card .card-title{
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.card-footer small a{
+    color: #e0fbfc;
+    font-size: large;
+    font-family: 'Fredoka One', cursive;
+    text-decoration: none;
+}
+
+.card-footer small a:hover{
+    color: #45bce5;
+}
+
+div .card .card-footer{
+    background: #5e6472;
+}
+
+.card:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em  #f1ff5c;
+    transform: translateY(-0.4em);
+}
+
+form{
+    /* margin-top: 100px; */
+    padding-top: 200px;
+    /* border: 1px solid red;
+    background: chartreuse; */
+}
+
+section div form fieldset{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    background: #212529;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bellota', cursive;
+    
+}
+
+fieldset input{
+    margin: 5px auto 10px;
+    width: 60%;
+    background: #eddcd2;
+    border-radius: 10px;
+    border: 1px solid #eddcd2;
+    
+}
+
+
+textarea {
+    background: #eddcd2;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;  
+}
+
+fieldset label{
+    color:  #45bce5;
+    font-family: 'Bellota', cursive;
+    font-size: 1.5rem;
+}
+
+/* #0e1941;
+#45bce5; */
+
+.butForm{
+    font-size: 2.5rem;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    background: #0e1941;
+    color: #eddcd2;
+    font-family: 'Fredoka One', cursive;
+    padding: 15px 35px;
+    margin: 25px 0;
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+    display: inline-block;
+    
+    
+}
+
+.butForm:hover{
+    text-decoration: none;
+    color: #45bce5;
+    
+}
+
+
+/* FOOTER SECTION */
+
+footer{
+    background: #212529;
+    margin-top: 0;
+    color: blanchedalmond;
+    font-family: 'Bellota', cursive;
+}
+
+footer div ul li a i{
+    margin: 50px auto;
+}
+
+.fa-chevron-circle-down{
+    color: #45bce5;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.fa-chevron-circle-up{
+    padding-top: 0;
+    color: #45bce5;
+    transition: all 3s ease-in-out;
+}
+
+.far{
+    margin-bottom: 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:1500px){
+    .fPageMaincontent{
+        min-height: 65vh;
+    } 
+}
+
+@media(max-width:768px){
+    .fPageMaincontent{
+        min-height: 15vh;
+    }
+
+    #nav-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #nav-ul.show{
+        display: flex;
+    }
+
+    .nav-ul li a{
+        font-size: 1rem;
+    }
+
+    #hamburger{
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        
+    }
+    .img-fluid{
+        max-height: 300px;
+    }
+    .card{
+        margin: 1.5rem 2rem;
+    }
+    .name{
+        font-size: 2rem; 
+    }
+    .social {
+        margin-bottom: 0;
+    }
+
+    
+}
+
+
+
