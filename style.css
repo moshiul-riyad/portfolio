@@ -69,7 +69,14 @@ body{
 header{
     color: antiquewhite;
     text-align: center;
-    overflow: auto;
+    height: 100vh;
+    transition: 0.2s;
+    z-index: 100000;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    /* background: #fff; */
 }
 
 nav{
@@ -77,6 +84,7 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
     
 }
 
@@ -87,6 +95,7 @@ nav{
     padding: 0;
     list-style: none;
     margin-bottom: 180px;
+    
 }
 
 .nav-ul li a{
@@ -191,7 +200,7 @@ nav{
 
 .about{
     background: #2b2b2b;
-    min-height: 1000px;
+    min-height: 1100px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
@@ -200,7 +209,7 @@ nav{
 
 
 .aboutmyself{
-    padding-top: 10%;
+    padding-top: 7%;
     margin-top: 0;
 }
 
@@ -224,7 +233,7 @@ section div p{
 }
 
 section div .aboutpar{
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     margin-bottom: 0;
 }
 
@@ -250,7 +259,7 @@ section div .aboutpar{
 
 /* SKILSS(CONTACT) SECTION */
 
-.skills{
+.message-me{
     background: url("rail.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -262,7 +271,7 @@ section div .aboutpar{
 }
 
 .myworks{
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .img-fluid{
@@ -315,7 +324,7 @@ section div form fieldset{
 
 fieldset input{
     margin: 5px auto 10px;
-    width: 60%;
+    width: 40%;
     background: #eddcd2;
     border-radius: 10px;
     border: 1px solid #eddcd2;
@@ -336,6 +345,10 @@ fieldset label{
     color:  #45bce5;
     font-family: 'Bellota', cursive;
     font-size: 1.5rem;
+}
+
+fieldset label:first-child{
+    margin-top: 10px;
 }
 
 /* #0e1941;
@@ -380,13 +393,14 @@ footer div ul li a i{
 .fa-chevron-circle-down{
     color: #45bce5;
     margin-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .fa-chevron-circle-up{
     padding-top: 0;
     color: #45bce5;
     transition: all 3s ease-in-out;
+    margin-top: 15px;
 }
 
 .far{
@@ -405,6 +419,7 @@ footer div ul li a i{
 @media(max-width:768px){
     .fPageMaincontent{
         min-height: 15vh;
+        margin-top: 15%;
     }
 
     #nav-ul{
@@ -429,6 +444,7 @@ footer div ul li a i{
         border: none;
         margin-top: 10px;
         margin-bottom: 50px;
+        transition: all 2s ease-in-out;
         
     }
     .img-fluid{
@@ -441,11 +457,11 @@ footer div ul li a i{
         font-size: 2rem; 
     }
     .social {
-        margin-bottom: 0;
+        margin-bottom: 5%;
+    } 
+    .fa-chevron-circle-down{
+        display: none;
     }
-
-    
 }
-
 
 
