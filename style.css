@@ -55,21 +55,20 @@ body,html{
     height: 100%;
 }
 
-body{
-    color: antiquewhite;
-}
 
 body{
-    background: url("woods.jpg");
+    /* background: url("woods.jpg"); */
+    background: url("https://images.unsplash.com/photo-1620995186179-e7cef818a82c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: antiquewhite;
+    min-height: 100vh;
 }
 
 header{
     color: antiquewhite;
     text-align: center;
-    height: 100vh;
     transition: 0.2s;
     z-index: 100000;
 }
@@ -136,10 +135,11 @@ nav{
     font-size: 4rem;
 }
 
-.fPageMaincontent{
-    min-height: 75vh;
-
+.firstPage{
+    color: antiquewhite;
+    text-align: center;
 }
+
 
 @keyframes bounceIn {
     0% {
@@ -160,12 +160,26 @@ nav{
 
 /* ABOUT SECTION */
 
+.about{
+    background: #2b2b2b;
+    min-height: 1000px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.aboutmyself{
+    padding-top: 7%;
+    margin-top: 0;
+}
+
 .introduction{
     margin: 2rem auto;
     font-family: 'Bellota', cursive;
     font-size: 1.2rem;
     line-height: 2;
     color: antiquewhite;
+    margin-bottom: 20px;
 }
 
 .social{
@@ -176,6 +190,7 @@ nav{
     margin: auto;
     list-style: none;
     line-height: 2;
+    margin-bottom: 25px;
     
 }
 
@@ -198,20 +213,7 @@ nav{
     
 }
 
-.about{
-    background: #2b2b2b;
-    min-height: 1100px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-
-
-.aboutmyself{
-    padding-top: 7%;
-    margin-top: 0;
-}
 
 section div h2{
     color: antiquewhite;
@@ -260,7 +262,7 @@ section div .aboutpar{
 /* SKILSS(CONTACT) SECTION */
 
 .message-me{
-    background: url("rail.jpg");
+    background: url("https://images.unsplash.com/photo-1615875623531-19c350460e08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -410,17 +412,14 @@ footer div ul li a i{
 
 /* MEDIA QUERIES */
 
-@media(max-width:1500px){
-    .fPageMaincontent{
-        min-height: 65vh;
-    } 
+@media screen and (min-width:768px){
+    .firstPage{
+        min-height: 600px;
+    }
 }
 
+
 @media(max-width:768px){
-    .fPageMaincontent{
-        min-height: 15vh;
-        margin-top: 15%;
-    }
 
     #nav-ul{
         display: none;
@@ -461,6 +460,10 @@ footer div ul li a i{
     } 
     .fa-chevron-circle-down{
         display: none;
+    }
+    fieldset input{
+        /* margin: 5px auto 10px; */
+        width: 60%; 
     }
 }
 
