@@ -70,21 +70,33 @@ header{
     color: antiquewhite;
     text-align: center;
     transition: 0.2s;
-    z-index: 100000;
-}
-
-header.sticky{
-    padding: 5px 100px;
-    /* background: #fff; */
-}
-
-nav{
+    /* z-index: 100000; */
+    /* sticky navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
-    
+    /* margin-bottom: 50px; */
+}
+
+header.sticky{
+    padding: 5px 20px;
+    background: black;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    margin-top: 0;
 }
 
 .nav-ul{
@@ -93,8 +105,8 @@ nav{
     justify-content: center;
     padding: 0;
     list-style: none;
-    margin-bottom: 180px;
-    
+    /* margin-bottom: 30px;    */
+    margin-top: 0;
 }
 
 .nav-ul li a{
@@ -124,6 +136,8 @@ nav{
     font-size: 20px;
     cursor: pointer;
     display: none;
+    margin-bottom: 10px;
+
 }
 
 #hamburger:focus{
@@ -138,6 +152,7 @@ nav{
 .firstPage{
     color: antiquewhite;
     text-align: center;
+    margin-top: 250px;
 }
 
 
@@ -154,8 +169,6 @@ nav{
       transform: scale(1);
     }
   }
-
-
 
 
 /* ABOUT SECTION */
@@ -200,13 +213,6 @@ nav{
     transition: all 3s ease-in-out;
 }
 
-/* .fas{
-    font-size: 2rem;
-    margin-top: 100px;
-    margin-bottom: 0;
-    transition: all 3s ease-in-out;
-    
-} */
 
 .fab:hover{
     color: #45bce5;
@@ -414,7 +420,13 @@ footer div ul li a i{
 
 @media screen and (min-width:768px){
     .firstPage{
-        min-height: 600px;
+        min-height: 550px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .firstPage{
+        min-height: 575px;
     }
 }
 
@@ -425,7 +437,7 @@ footer div ul li a i{
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     #nav-ul.show{
         display: flex;
@@ -442,7 +454,7 @@ footer div ul li a i{
         width: 100%;
         border: none;
         margin-top: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         transition: all 2s ease-in-out;
         
     }
@@ -463,7 +475,7 @@ footer div ul li a i{
     }
     fieldset input{
         /* margin: 5px auto 10px; */
-        width: 60%; 
+        width: 80%; 
     }
 }
 
