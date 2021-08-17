@@ -315,20 +315,23 @@ div .card .card-footer{
 
 /* work section ends here */
 
+/* work section(refactored) starts here */
+
 .mywork {
     /* width: 100%; */
+    background: #2b2b2b;
     margin: auto;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     /* background-color: #f6f9fc; */
-    background-color: #212529;
+    background: #212529;
     padding: 1%;
   }
   
   .project {
-    width: 30%; 
+    width: 25%; 
     border: 1px solid black;
     border-radius: 10px;
     margin: 25px 10px; 
@@ -352,6 +355,15 @@ div .card .card-footer{
   .project img {
     width: 100%; 
   }
+
+  .project-title{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding-top: 8px;
+  }
   
   .project a {
     margin-bottom: 7%;
@@ -362,13 +374,19 @@ div .card .card-footer{
     border: 1px solid black;
     border-radius: 10px;
     padding: 7px;
-  
+    margin-right: 20px;
+  }
+
+  .project a:nth-of-type(2){
+      border: none;
+      font-size: 30px;
   }
   
   .project a:hover {
     background-color: black;
     color: #e0fbfc;
     transition: 0.5s;
+    text-decoration: none;
   }
   
   @media screen and (max-width:1199px){
@@ -385,17 +403,21 @@ div .card .card-footer{
       margin: 5% 15%;
     }
   }
-  .project-title{
-    font-family: 'Fredoka One', cursive;
-    font-size: 1.5em;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    font-weight: lighter;
-  }
+
 
   /*  */
   /*  */
   /*  */
+
+.message-me{
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1615875623531-19c350460e08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: antiquewhite;
+    min-height: 100vh;
+}
 
 form{
     /* margin-top: 100px; */
