@@ -247,7 +247,7 @@ section div .aboutpar{
 
  /* WORK SECTION */
 
-.works{
+/* .works{
     background: #212529;
     min-height: 1000px;
     text-align: center;
@@ -267,7 +267,7 @@ section div .aboutpar{
 
 /* SKILSS(CONTACT) SECTION */
 
-.message-me{
+/* .message-me{
     background: url("https://images.unsplash.com/photo-1615875623531-19c350460e08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-repeat: no-repeat;
     background-position: center;
@@ -311,7 +311,91 @@ div .card .card-footer{
 .card:hover{
     box-shadow: 0 0.5em 0.5em -0.4em  #f1ff5c;
     transform: translateY(-0.4em);
-}
+}  */
+
+/* work section ends here */
+
+.mywork {
+    /* width: 100%; */
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: #f6f9fc; */
+    background-color: #212529;
+    padding: 1%;
+  }
+  
+  .project {
+    width: 30%; 
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 25px 10px; 
+    padding-bottom: 20px;
+    border-top: none;
+    background-color: #e0fbfc;
+  }
+  
+  .project:hover{
+    box-shadow: 0 0.7em 0.5em -0.4em  #f1ff5c;
+    transform: translateY(-0.5em);
+  }
+  
+  .project p {
+    line-height: 2em;
+    background-color: #e0fbfc;
+    margin-bottom: 5%;
+    font-family: 'Bellota', cursive;
+  }
+  
+  .project img {
+    width: 100%; 
+  }
+  
+  .project a {
+    margin-bottom: 7%;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Fredoka One', cursive;
+    color: #5e6472;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px;
+  
+  }
+  
+  .project a:hover {
+    background-color: black;
+    color: #e0fbfc;
+    transition: 0.5s;
+  }
+  
+  @media screen and (max-width:1199px){
+    .project {
+      width: 35%;
+      margin: 5% 3%;
+    }
+  }
+  
+  
+  @media screen and (max-width:767px){
+    .project {
+      width: 80%;
+      margin: 5% 15%;
+    }
+  }
+  .project-title{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  /*  */
+  /*  */
+  /*  */
 
 form{
     /* margin-top: 100px; */
