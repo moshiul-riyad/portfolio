@@ -153,6 +153,7 @@ nav{
     color: antiquewhite;
     text-align: center;
     margin-top: 250px;
+    min-height: 600px;
 }
 
 
@@ -245,75 +246,6 @@ section div .aboutpar{
     margin-bottom: 0;
 }
 
- /* WORK SECTION */
-
-/* .works{
-    background: #212529;
-    min-height: 1000px;
-    text-align: center;
-    margin-top: 0;
-    padding-bottom: 70px;
-    margin-bottom: 0;
-}
-
-.card-title{
-    font-family: 'Fredoka One', cursive;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;  
-}
-
-/* SKILSS(CONTACT) SECTION */
-
-/* .message-me{
-    background: url("https://images.unsplash.com/photo-1615875623531-19c350460e08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 950px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.myworks{
-    padding-top: 2rem;
-}
-
-.img-fluid{
-    max-height: 200px;
-}
-
-.card-body{
-    background: #e0fbfc;
-}
-div .card .card-title{
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
-.card-footer small a{
-    color: #e0fbfc;
-    font-size: large;
-    font-family: 'Fredoka One', cursive;
-    text-decoration: none;
-}
-
-.card-footer small a:hover{
-    color: #45bce5;
-}
-
-div .card .card-footer{
-    background: #5e6472;
-}
-
-.card:hover{
-    box-shadow: 0 0.5em 0.5em -0.4em  #f1ff5c;
-    transform: translateY(-0.4em);
-}  */
-
-/* work section ends here */
 
 /* work section(refactored) starts here */
 
@@ -329,12 +261,23 @@ div .card .card-footer{
     background: #212529;
     padding: 1%;
   }
+
+  .mywork h2{
+    color: antiquewhite;
+    margin-bottom: 3rem;
+    font-family: 'Fredoka One', cursive;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    display: block;
+  }
   
   .project {
     width: 25%; 
     border: 1px solid black;
     border-radius: 10px;
-    margin: 25px 10px; 
+    margin: 50px 10px; 
     padding-bottom: 20px;
     border-top: none;
     background-color: #e0fbfc;
@@ -409,6 +352,19 @@ div .card .card-footer{
   /*  */
   /*  */
 
+/* (CONTACT) SECTION */
+
+/* .message-me{
+    background: url("https://images.unsplash.com/photo-1615875623531-19c350460e08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 950px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+} */  
+
 .message-me{
     text-align: center;
     background-image: url("https://images.unsplash.com/photo-1615875623531-19c350460e08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
@@ -475,7 +431,7 @@ fieldset label:first-child{
     background: #0e1941;
     color: #eddcd2;
     font-family: 'Fredoka One', cursive;
-    padding: 15px 35px;
+    padding: 10px 25px;
     margin: 25px 0;
     text-decoration: none;
     transition: all 100ms ease-in-out;
@@ -489,6 +445,40 @@ fieldset label:first-child{
     color: #45bce5;
     
 }
+
+#status{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#status.success{
+    color: #9fffcb;
+    animation: status 3s ease forwards;
+}
+
+#status.error{
+    color: #f73c3d;
+    animation: status 3s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+/* (CONTACT) SECTION ends here*/
 
 
 /* FOOTER SECTION */
@@ -522,22 +512,12 @@ footer div ul li a i{
 }
 
 
-/* MEDIA QUERIES */
-
-@media screen and (min-width:768px){
-    .firstPage{
-        min-height: 550px;
-    }
-}
-
-@media screen and (min-width:1200px){
-    .firstPage{
-        min-height: 575px;
-    }
-}
 
 
 @media(max-width:768px){
+    .firstDiv {
+        max-height: 580px;
+    }
 
     #nav-ul{
         display: none;
