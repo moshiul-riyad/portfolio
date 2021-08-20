@@ -51,19 +51,24 @@ table {
 
 /* NAV AND HEADER */
 
-body,html{
-    height: 100%;
-}
 
 
 body{
     /* background: url("woods.jpg"); */
+    /* https://images.unsplash.com/photo-1620995186179-e7cef818a82c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80 */
     background: url("https://images.unsplash.com/photo-1620995186179-e7cef818a82c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     color: antiquewhite;
-    min-height: 100vh;
+    min-height: 100vh; 
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:767px){
+    body{
+        background: url("https://images.unsplash.com/photo-1617565482440-9dfe7ca2b1f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    }
 }
 
 header{
@@ -125,9 +130,17 @@ nav{
     background: #0e1941;
     color: #45bce5;
     border-radius: 15px;
-    padding: 5px 10px;
-    
+    padding: 5px 10px;   
 }
+
+/* .nav-ul li a.active{
+    text-decoration: none;
+    background: #0e1941;
+    color: #45bce5;
+    border-radius: 15px;
+    padding: 5px 10px; 
+    transition: 0.4 ease;
+} */
 
 #hamburger{
     background-color: transparent;
@@ -144,6 +157,7 @@ nav{
     outline: none;
 }
 
+
 .name{
     font-family: 'Fredoka One', cursive; 
     font-size: 4rem;
@@ -153,9 +167,10 @@ nav{
     color: antiquewhite;
     text-align: center;
     margin-top: 250px;
-    min-height: 600px;
+    min-height: 700px;
+    /*  */
+    
 }
-
 
 @keyframes bounceIn {
     0% {
@@ -498,6 +513,8 @@ footer div ul li a i{
     color: #45bce5;
     margin-bottom: 20px;
     padding-top: 25px;
+    transition: 2s ease-in-out;
+    
 }
 
 .fa-chevron-circle-up{
@@ -515,18 +532,20 @@ footer div ul li a i{
 
 
 @media(max-width:768px){
-    .firstDiv {
+    /* .firstDiv {
         max-height: 580px;
-    }
+    } */
 
     #nav-ul{
         display: none;
         flex-direction: column;
         width: 100%;
         margin-bottom: 10px;
+        
     }
     #nav-ul.show{
         display: flex;
+        
     }
 
     .nav-ul li a{
@@ -558,6 +577,7 @@ footer div ul li a i{
     } 
     .fa-chevron-circle-down{
         display: none;
+
     }
     fieldset input{
         /* margin: 5px auto 10px; */
