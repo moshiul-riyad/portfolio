@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function () {
         error(xhr.status, xhr.response, xhr.responseType);
       }
     };
-    xhr.send(data);
+    xhr.send(data);6
   }
 
   //highlight active nav
