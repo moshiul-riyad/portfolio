@@ -158,10 +158,37 @@ nav{
 }
 
 
-.name{
+/* ---------------------------------- */
+
+/* .ml2{
     font-family: 'Fredoka One', cursive; 
     font-size: 4rem;
-}
+} */
+
+
+.ml6 {
+    font-family: 'Fredoka One', cursive; 
+    position: relative;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+/* ---------------------------------- */
 
 .firstPage{
     color: antiquewhite;
@@ -569,7 +596,7 @@ footer div ul li a i{
     .card{
         margin: 1.5rem 2rem;
     }
-    .name{
+    .ml6{
         font-size: 2rem; 
     }
     .social {
