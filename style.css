@@ -288,6 +288,26 @@ section div .aboutpar{
     margin-bottom: 0;
 }
 
+/* skill section(refactored) starts here */
+
+.myskills{
+    background: #353535;
+    min-height: 1000px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.myskills h2{
+    color: antiquewhite;
+    margin-bottom: 3rem;
+    padding-top: 100px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.myskills .fab{
+    color: #45bce5;
+}
 
 /* work section(refactored) starts here */
 
@@ -309,6 +329,19 @@ section div .aboutpar{
     margin-bottom: 3rem;
     font-family: 'Fredoka One', cursive;
     margin: 20px auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    display: block;
+  }
+
+  .message-me h2{
+    color: antiquewhite;
+    margin-bottom: 3rem;
+    font-family: 'Fredoka One', cursive;
+    margin: 20px auto;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     width: 80%;
@@ -419,7 +452,7 @@ section div .aboutpar{
 
 form{
     /* margin-top: 100px; */
-    padding-top: 200px;
+    padding-top: 80px;
     /* border: 1px solid red;
     background: chartreuse; */
 }
