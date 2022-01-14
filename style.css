@@ -291,7 +291,9 @@ section div .aboutpar{
 /* skill section(refactored) starts here */
 
 .myskills{
-    background: #353535;
+    /* background: #353535; */
+    /* background: #ffe8d6; */
+    background: antiquewhite;
     min-height: 1000px;
     text-align: center;
     margin-top: 0;
@@ -299,7 +301,8 @@ section div .aboutpar{
 }
 
 .myskills h2{
-    color: antiquewhite;
+    /* color: antiquewhite; */
+    color: #353535;
     margin-bottom: 3rem;
     padding-top: 100px;
     font-family: 'Fredoka One', cursive;
@@ -642,6 +645,9 @@ footer div ul li a i{
     fieldset input{
         /* margin: 5px auto 10px; */
         width: 80%; 
+    }
+    .myskills h2{
+        font-size: 2.5rem;
     }
 }
 
