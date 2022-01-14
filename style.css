@@ -270,6 +270,7 @@ section div h2{
     font-family: 'Fredoka One', cursive;
 }
 
+
 section div p{
     color: #7a7a7a;
     font-family: 'Bellota', cursive;
@@ -311,6 +312,24 @@ section div .aboutpar{
 .myskills .fab{
     color: #45bce5;
 }
+
+.myskills h1{
+    font-family: 'Bellota', cursive;
+}
+
+.skills-frontend,.skills-backend, .skills-db, .skills-vc{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+/* .skill{
+    width: 25%;
+} */
 
 /* work section(refactored) starts here */
 
