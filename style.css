@@ -51,7 +51,9 @@ table {
 
 /* NAV AND HEADER */
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     /* background: url("woods.jpg"); */
@@ -159,11 +161,6 @@ nav{
 
 
 /* ---------------------------------- */
-
-/* .ml2{
-    font-family: 'Fredoka One', cursive; 
-    font-size: 4rem;
-} */
 
 
 .ml6 {
